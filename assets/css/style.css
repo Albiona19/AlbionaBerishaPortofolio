@@ -421,7 +421,16 @@ box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), .4);
   display: flex;
   column-gap: .5rem;
 }
-.skills .fa-badge-check{
+.skills .fa-html5,
+.fa-css3-alt,
+.fa-js,
+.fa-wordpress,
+.fa-react,
+.fa-bootstrap,
+.fa-php,
+.fa-node-js,
+.fa-database,
+.fa-server{
   font-size: 1rem;
   color: var(--first-color);
 }
