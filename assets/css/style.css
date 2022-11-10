@@ -566,7 +566,12 @@ box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), .4);
   width: 320px;
   background-color: var(--container-color);
   padding: 1rem;
+  display: flex;
+  gap: 10px;
   border-radius: 1rem;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
 }
 
 .work__image{
