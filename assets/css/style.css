@@ -608,17 +608,13 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
-th,
-td {
+
+th, td {
   text-align: left;
-  padding: 8px 5px;
+  padding: 8px;
 }
-tr:nth-child(even) {
-  background-color: #6eeccf;
-}
-tr:nth-child(odd) {
-  background-color: #2d7f88;
-}
+
+tr:nth-child(even) {background-color: hsl(var(--first-hue), var(--sat), 71%)}
 
 /*=============== TESTIMONIAL ===============*/
 

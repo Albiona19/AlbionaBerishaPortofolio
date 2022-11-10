@@ -44,8 +44,8 @@ request.onload = function () {
   var statusHTML = '';
   $.each(data, function(i, status) {
     statusHTML += '<tr>';
-    statusHTML += '<td>' + status.id + '</td>';
-    statusHTML += '<td>' + status.name + '</td>';
+    // statusHTML += '<td>' + status.id + '</td>';
+    // statusHTML += '<td>' + status.name + '</td>';
     statusHTML += '<td>' + status.html_url + '</td>';
     statusHTML += '<td>' + status.language + '</td>';
     statusHTML += '</tr>';
