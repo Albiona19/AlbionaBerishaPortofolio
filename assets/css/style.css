@@ -602,8 +602,23 @@ box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), .4);
   font-size: 1rem;
   transition: .4s;
 }
-/* Active item work*/
+/* Giithub Repositories*/
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  text-align: left;
+  padding: 8px 5px;
+}
+tr:nth-child(even) {
+  background-color: #6eeccf;
+}
+tr:nth-child(odd) {
+  background-color: #2d7f88;
+}
 
 /*=============== TESTIMONIAL ===============*/
 
