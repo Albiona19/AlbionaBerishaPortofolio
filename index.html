@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
         <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="./assets/css/style.css">
@@ -518,9 +518,10 @@
                 <h2 class="section__title">Testimonial</h2>
 
 
-                <div class="testimonials__container container">
-                 <div class="testimonial__card">
-                    <img src="./assets/img/testimonial2.png" alt="" class="testimonial__img">
+                <div class="testimonials__container container swiper">
+                <div class="swiper-wrapper">
+                 <div class="testimonial__card swiper-slide">
+                    <img src="./assets/img/testimonial2.png" alt="" class="testimonial__img img1">
 
 
 
@@ -529,18 +530,17 @@
                         Certified as having the highest points in back end development, every project was in the best way and their explanation was correct.
                     </p>
                  </div>
-                 <div class="testimonial__card">
+                 <div class="testimonial__card swiper-slide">
                     <img src="./assets/img/testimonal1.png" alt="" class="testimonial__img">
 
 
 
                     <h3 class="testimonial__name">Beetrot Academy</h3>
                     <p class="testimonial__description">
-                        Certified as a junior in front end development, every project is accurate and on time
-                    </p>
+                        Certified as a junior in development, every project is accurate and on time and the explanation was accurate and always following the lectures                    </p>
                  </div>
 
-                 <div class="testimonial__card">
+                 <div class="testimonial__card swiper-slide">
                     <img src="./assets/img/testimonal3.png" alt="" class="testimonial__img">
 
 
@@ -552,6 +552,9 @@
                     </p>
                  </div>
                 </div>
+                <div class="swiper-pagination"></div>
+                </div>
+
             </section>
 
             <!--=============== CONTACT ===============-->
@@ -569,7 +572,7 @@
         <script src=""></script>
 
         <!--=============== SWIPER JS ===============-->
-        <script src=""></script>
+        <script src="./assets/js/swiper-bundle.min.js"></script>
 
         <!--=============== MIXITUP FILTER ===============-->
         <script src=""></script>

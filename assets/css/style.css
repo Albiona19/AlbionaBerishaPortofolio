@@ -631,9 +631,18 @@ tr:nth-child(even) {background-color: hsl(var(--first-hue), var(--sat), 71%)}
 .testimonial__description{
   font-size: var(--small-font-size);
 }
+.img1{
+  width: 94px;
+}
 
 
 /* Swiper class */
+.swiper-pagination-bullet{
+  background-color: var(--text-color-light);
+}
+.swiper-pagination-bullet-active{
+  background-color: var(--first-color);
+}
 
 
 /*=============== CONTACT ===============*/
