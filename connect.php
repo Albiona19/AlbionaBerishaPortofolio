@@ -1,0 +1,617 @@
+<?php
+    $fullname = $_POST['fullname'];
+    $email = $_POST['email'];
+    $project = $_POST['project'];
+
+    //DATABASE CONNECTION
+
+   $mailheader = "From :" .$fullname. "<" .$email.">\r\n"
+
+   $recipient = "albiona.berisha66@outlook.com";
+
+   mail($recipient, $project, $fullname, $mailheader)
+
+   or die ("Error!");
+
+   echo '
+   
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="./assets/img/fav.png" type="image/x-icon">
+
+    <!--=============== ICONS ===============-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title> Albiona Berisha Portofolio </title>
+</head>
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">albionaberisha.dev;</a>
+            <div class="nav__menu">
+                <ul class="nav__list">
+
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="fal fa-home"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="far fa-user"></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="far fa-book"></i>
+                        </a>
+                    </li>
+
+
+                    <li class="nav__item">
+                        <a href="contactdatabase.php" class="nav__link">
+                            <i class="fad fa-comment-alt-lines"></i>
+                         </a>
+                    </li>
+                </ul>
+            </div>
+             <!-- Theme change Button -->
+             <i class="fal fa-moon change-theme" id="theme-button"></i>
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__greeting">Hello, I'm</span>
+                    <h1 class="home__name">Albiona Berisha </h1>
+                    <h3 class="home__education">Full Stack Development</h3>
+                
+                    <div class="home__buttons">
+                        <a download="" href="./assets/CV - Albiona Berisha.pdf" class="button button--ghost">
+                            Download CV
+                        </a>
+                        <a href="#about" class="button">About Me</a>
+                    </div>
+                </div>
+                <div class="home__handle">
+                    <img src="./assets/img/portofolio.png" class="home__img" alt="">
+                </div>
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/albiona-berisha-888a7a249/" target="_blank" class="home__social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Albiona19" target="_blank" class="home__social-link">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                    <a href="" class="home__social-link">
+
+                    </a>
+                </div>
+                <a href="#about" class="home__scroll">
+                    <i class="fas fa-chevron-double-down home__scroll-icon"></i>
+                    <span class="home__scroll-name">Scroll Down</span>
+                </a>
+            </div>
+            
+        </section>
+        
+        <!--=============== ABOUT ===============-->
+        <section class="about section" id="about">
+            <div class="section__main">
+            <span class="section__subtitle">My Intro</span>
+            <h2 class="section__title">About Me</h2>
+        </div>
+
+            <div class="about__container container grid">
+                <!-- <img src="./assets/img/portofolio2.png" class="about__img" alt=""> -->
+
+                <div class="about__data">
+                    <div class="about__info">
+                        <div class="about__box">
+                            <i class="fal fa-award about__icon"></i>
+                            <h3 class="about__title">Education</h3>
+                            <span class="about__subtitle">UBT : Computer Science and Engineering</span>
+                        </div>
+
+                        <div class="about__box">
+                            <i class="far fa-briefcase about__icon"></i>
+                            <h3 class="about__title">Completed</h3>
+                            <span class="about__subtitle">15 + Projects</span>
+                        </div>
+
+                        <div class="about__box">
+                            <i class="fas fa-headset about__icon"></i>
+                            <h3 class="about__title">Online</h3>
+                            <span class="about__subtitle">24/7</span>
+                        </div>
+                    </div>
+                    <p class="about__description">
+                        I am a Full-Stack developer, a professional to work both in the appropriate processes both front-end and back-end development processes.
+                    </p>
+                    <a href="#contact" class="button">Contact Me</a>
+                </div>
+            </div>
+            
+        </section>
+
+        <!--=============== SKILLS ===============-->
+        <section class="skills section" id="skills">
+            <span class="section__subtitle">My Abilities </span>
+            <h2 class="section__title">Courses Attended</h2>
+
+
+            <div class="skills_container container grid">
+                <div class="skills__content">
+                <h3 class="skills__title">Beetrot Academy</h3>
+
+                <div class="skills__box">
+                    <div class="skills__group">
+                        <div class="skills__data">
+                            <i class="fab fa-html5"></i>
+
+                            <div>
+                               <a href="https://html.com/" target="_blank"> <h3 class="skills__name">HTML</h3></a>
+                                <span class="skills__level">Advanced</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <i class="fab fa-css3-alt"></i>
+
+                            <div>
+                               <a href="https://www.w3schools.com/Css/" target="_blank"> <h3 class="skills__name">CSS</h3></a>
+                                <span class="skills__level">Advanced</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <i class="fab fa-js"></i>
+
+                            <div>
+                               <a href="https://www.javascript.com/" target="_blank"> <h3 class="skills__name">JavaScript</h3></a>
+                                <span class="skills__level">Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__group">
+                        <div class="skills__data">
+                            <i class="fab fa-wordpress"></i>
+
+                            <div>
+                               <a href="https://wordpress.org/" target="_blank"> <h3 class="skills__name">WordPress</h3></a>
+                                <span class="skills__level">Advanced</span>
+                            </div>
+                        </div>
+                        
+                        <div class="skills__data">
+                            <i class="fab fa-react"></i>
+
+                            <div>
+                               <a href="https://learnreactjs.org/" target="_blank"><h3 class="skills__name">React</h3></a>
+                                <span class="skills__level">Advanced</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <i class="fab fa-bootstrap"></i>
+
+                            <div>
+                               <a href="https://getbootstrap.com/" target="_blank"><h3 class="skills__name">Bootstrap</h3></a> 
+                                <span class="skills__level">Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="skills__content">
+                <h3 class="skills__title">Back End Developer</h3>
+
+                <div class="skills__box">
+                    <div class="skills__group">
+                        <div class="skills__data">
+                            <i class="fab fa-php"></i>
+
+                            <div>
+                               <a href="https://www.php.net/" target="_blank"> <h3 class="skills__name">PHP</h3></a>
+                                <span class="skills__level">Intermediate</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <i class="fab fa-node-js"></i>
+                            <div>
+                               <a href="https://nodejs.org/en/" target="_blank"><h3 class="skills__name">NodeJS</h3></a>
+                                <span class="skills__level">Advanced</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <i class="fas fa-database"></i>
+
+                            <div>
+                               <a href="https://www.mysql.com/" target="_blank"><h3 class="skills__name">MySql</h3></a>
+                                <span class="skills__level">Advanced</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__group">
+                        <div class="skills__data">
+                            <i class="fas fa-server"></i>
+
+                            <div>
+                               <a href="https://firebase.google.com/" target="_blank"> <h3 class="skills__name">FireBase</h3></a>
+                                <span class="skills__level">Advanced</span>
+                            </div>
+                        </div>
+                        
+                    
+                    </div>
+                    
+                </div>
+            </div>
+            </div>
+            
+        </section>
+
+        <!--=============== SERVICES ===============-->
+        <section class="services section">
+            <span class="section__subtitle">My Services</span>
+            <h2 class="section__title">What I Offer</h2>
+
+            <div class="services__container container grid">
+                <div class="services__card">
+                    <h3 class="services__title">Front End App</h3>
+
+                    <span class="services__button">
+                        See More Please <i class="fas fa-arrow-right services__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="service__modal-content">
+                            <i class="far fa-times services__modal-close"></i>
+
+                            <h3 class="services__modal-title">Front End App</h3>
+                            <p class="services__modal-description">
+                                I followed training at Beetrot Academy for front end developer and was chosen as a junior, I completed various projects where we were activated for projects with html, css, js, react
+
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class="fad fa-check services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        I create websites and web applications.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class="fad fa-check services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        I develop the User Interface
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class="fad fa-check services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        Web Page Development
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class="fad fa-check services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        I design the website
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class="fad fa-check services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        And I know to work with frame works
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__card">
+                    <h3 class="services__title">Back End App</h3>
+
+                    <span class="services__button">
+                        See More Please <i class="fas fa-arrow-right services__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="service__modal-content">
+                            <i class="far fa-times services__modal-close"></i>
+
+                            <h3 class="services__modal-title">Back End App</h3>
+                            <p class="services__modal-description">
+                                I followed training at ICT for back end developer and was chosen as a junior, I completed various projects where we were activated for projects with php, mysql, nodejs
+
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class="fad fa-check services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        I build an application
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class="fad fa-check services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        I maintain an application
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class="fad fa-check services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        I debug an application
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class="fad fa-check services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        I i come up with the solutions and write the code to make all of this happen.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__card">
+                    <h3 class="services__title">WordPress Developer</h3>
+
+                    <span class="services__button">
+                        See More Please <i class="fas fa-arrow-right services__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="service__modal-content">
+                            <i class="far fa-times services__modal-close"></i>
+
+                            <h3 class="services__modal-title">Word Press Developer</h3>
+                            <p class="services__modal-description">
+                                I followed training at Udemy for wordpress developer, I completed various projects where we were activated for projects with html, css, js, php, elementor etc.
+
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class="fad fa-check services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        I build websites
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class="fad fa-check services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        I know to work with themes,plugins, widgets etc.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class="fad fa-check services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        I design the website
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <!--=============== WORK ===============-->
+        <section class="work section" id="work">
+            <span class="section__subtitle">My Portofolio</span>
+            <h2 class="section__title">Recent Works</h2>
+
+
+            <div class="work__filters">
+                <span class="work__item">Some</span>
+                <span class="work__item">Of My</span>
+                <span class="work__item">Projects</span>
+                <span class="work__item">Published</span>
+            </div>
+
+            <div class="work__container container grid">
+                <div class="work__card">
+                    <img src="./assets/img/BurgerKing.png" class="work__image" alt="">
+
+                    <h3 class="work__title">Burger King</h3>
+                    <h3 class="work__h3">Architecture</h3>
+                        <p class="about__section">HTML,CSS,JavaScript</p>
+
+                    <a href="" class="work__button">
+                       <a href="https://albiona-burgerking.netlify.app/" target="_blank"> Demo  <i class="far fa-arrow-right work__icon"></i></a>
+                    </a>
+
+
+                </div>
+                <div class="work__card">
+                    <img src="./assets/img/travel.png" class="work__image" alt="">
+
+                    <h3 class="work__title">Bhromaon Travel</h3>
+                    <h3 class="work__h3">Architecture</h3>
+                        <p class="about__section">HTML,CSS,SASS</p>
+
+                    <a href="" class="work__button">
+                        
+
+                      <a href="https://albionaberisha-bhromaon.netlify.app/" target="_blank"> Demo  <i class="far fa-arrow-right work__icon"></i></a> 
+                    </a>
+
+
+                </div>
+                <div class="work__card">
+                    <img src="./assets/img/hosting.png" class="work__image" alt="">
+
+                    <h3 class="work__title">Hosting Company</h3>
+                    <h3 class="work__h3">Architecture</h3>
+                        <p class="about__section">HTML,CSS,SASS</p>
+
+                    <a href="" class="work__button">
+                       <a href="https://albionaberisha-hosting.netlify.app/" target="_blank"> Demo  <i class="far fa-arrow-right work__icon"></i></a>
+                    </a>
+
+
+                </div>
+                <div class="work__card">
+                    <img src="./assets/img/spacex.png" class="work__image" alt="">
+
+                    <h3 class="work__title">SpaceX App</h3>
+                    <h3 class="work__h3">Architecture</h3>
+                        <p class="about__section">React,HTML,CSS,SASS</p>
+
+                    <a href="" class="work__button">
+                       <a href="https://albiona19.github.io/spaceX-App/" target="_blank"> Demo  <i class="far fa-arrow-right work__icon"></i></a>
+                    </a>
+
+
+                </div>
+            </div>
+            
+        </section>
+
+        <!--=============== GITHUB ===============-->
+        <section class="table section">
+            <span class="section__subtitle">My Repository</span>
+            <h2 class="section__title">API from github</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr class="table-info">
+                      <!-- <th scope="col">ID</th>
+                      <th scope="col">Name</th> -->
+                      <th scope="col">URL</th>
+                      <th scope="col">Language</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- 
+                      <tr>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                      </tr> 
+                    -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            
+        </section>
+        <section class="testimonial section" id="testimonial">
+            <span class="section__subtitle">My courses trainer say </span>
+            <h2 class="section__title">Testimonial</h2>
+
+
+            <div class="testimonials__container container swiper">
+            <div class="swiper-wrapper">
+             <div class="testimonial__card swiper-slide">
+                <img src="./assets/img/testimonial2.png" alt="" class="testimonial__img img1">
+
+
+
+                <h3 class="testimonial__name">ICT</h3>
+                <p class="testimonial__description">
+                    Certified as having the highest points in back end development, every project was in the best way and their explanation was correct.
+                </p>
+             </div>
+             <div class="testimonial__card swiper-slide">
+                <img src="./assets/img/testimonal1.png" alt="" class="testimonial__img">
+
+
+
+                <h3 class="testimonial__name">Beetrot Academy</h3>
+                <p class="testimonial__description">
+                    Certified as a junior in development, every project is accurate and on time and the explanation was accurate and always following the lectures                    </p>
+             </div>
+
+             <div class="testimonial__card swiper-slide">
+                <img src="./assets/img/testimonal3.png" alt="" class="testimonial__img">
+
+
+
+                <h3 class="testimonial__name">UBT</h3>
+                <p class="testimonial__description">
+                    A really good job, all aspects of the project were
+                    followed step by step and with good results with an average grade of 8.1.
+                </p>
+             </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            </div>
+
+        </section>
+
+        <section class="contact section" id="contact">
+            <span class="section__subtitle">Thank you for contacting me. I will get back to you as soon as possible!</span>
+
+            <p class="testimonial__descripiton">Go back to the home page <a href="index.html">home page;</a></p>
+            
+
+            
+        </section>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src=""></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src=""></script>
+    <!-- jquery cdn  -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <!--=============== MAIN JS ===============-->
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
+   
+   
+   
+   
+   
+   
+   
+   '; 
+
+
+
+?>

@@ -595,18 +595,18 @@
                         <h3 class="contact__title">Write Me Your Project</h3>
 
 
-                        <form action="connect.php" method="post" class="contact__form">
+                        <form action="connect.php" method="POST" class="contact__form">
                             <div class="contact__form-div">
                                 <label for="" class="contact__form-tag">Full Name</label>
-                                <input type="text" placeholder="Insert Your Name" class="contact__form-input">
+                                <input type="text" placeholder="Insert Your Name"  name="fullname" id="fullname" class="contact__form-input">
                             </div>
                             <div class="contact__form-div">
                                 <label for="" class="contact__form-tag">Mail</label>
-                                <input type="email" placeholder="Insert your E-mail" class="contact__form-input">
+                                <input type="email" placeholder="Insert your E-mail" name="email" id="email"  class="contact__form-input">
                             </div>
                             <div class="contact__form-div contact__form-area">
                                 <label for="" class="contact__form-tag">Project</label>
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Write your Project" class="contact__form-input" ></textarea>
+                                <textarea name="" cols="30" rows="10" name="project" id="project" placeholder="Write your Project" class="contact__form-input" ></textarea>
                             </div>
 
                             <button class="button">Send Message</button>
