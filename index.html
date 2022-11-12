@@ -595,21 +595,22 @@
                         <h3 class="contact__title">Write Me Your Project</h3>
 
 
-                        <form action="connect.php" method="POST" class="contact__form">
+                        <form action="" method="" class="contact__form">
                             <div class="contact__form-div">
                                 <label for="" class="contact__form-tag">Full Name</label>
-                                <input type="text" placeholder="Insert Your Name"  name="fullname" id="fullname" class="contact__form-input">
+                                <input type="text"  placeholder="Insert Your Name"  name="fullname" id="input" class="contact__form-input">
                             </div>
                             <div class="contact__form-div">
                                 <label for="" class="contact__form-tag">Mail</label>
-                                <input type="email" placeholder="Insert your E-mail" name="email" id="email"  class="contact__form-input">
+                                <input type="email" placeholder="Insert your E-mail" name="email" id="input"  class="contact__form-input">
                             </div>
                             <div class="contact__form-div contact__form-area">
                                 <label for="" class="contact__form-tag">Project</label>
-                                <textarea name="" cols="30" rows="10" name="project" id="project" placeholder="Write your Project" class="contact__form-input" ></textarea>
+                                <textarea name="" cols="30" rows="10" name="project" id="email" placeholder="Write your Project" class="contact__form-input" ></textarea>
                             </div>
 
-                            <button class="button">Send Message</button>
+                            <input type="button"  class="button" value="Send Email" onclick="sendEmail()">
+
                         </form>
                     </div>
                 </div>
@@ -618,8 +619,43 @@
 
         <!--=============== FOOTER ===============-->
         <footer class="footer">
+            <div class="footer__container container">
+                <h1 class="footer__title">albioneberisha.dev;</h1>
+
+                <ul class="footer__list">
+                    <li>
+                        <a href="#about" class="footer__link">About</a>
+                    </li>
+                    <li>
+                        <a href="#work" class="footer__link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#testimonial" class="footer__link">Testimonial</a>
+                    </li>
+                </ul>
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class="fab fa-facebook"></i>
+
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class="fab fa-instagram"></i>
+                        
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class="fab fa-twitter"></i>
+                        
+                    </a>
+                </ul>
+
+                <span class="footer__copy">
+                    &#169; albionaberisha.dev; All rights reserved
+                </span>
+
+            </div>
             
         </footer>
+
 
         <!--=============== SCROLLREVEAL ===============-->
         <script src=""></script>
