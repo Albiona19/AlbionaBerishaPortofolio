@@ -598,15 +598,15 @@
                         <form action="./php/contact.php" method="POST" class="contact__form">
                             <div class="contact__form-div">
                                 <label for="" class="contact__form-tag">Full Name</label>
-                                <input type="text"  placeholder="Insert Your Name"  name="fullname" id="name" class="contact__form-input">
+                                <input type="text"  placeholder="Insert Your Name"  name="fullname" id="name" class="contact__form-input" required>
                             </div>
                             <div class="contact__form-div">
                                 <label for="" class="contact__form-tag">Mail</label>
-                                <input type="email" placeholder="Insert your E-mail" name="email" id="email"  class="contact__form-input">
+                                <input type="email" placeholder="Insert your E-mail" name="email" id="email"  class="contact__form-input" required>
                             </div>
                             <div class="contact__form-div contact__form-area">
                                 <label for="" class="contact__form-tag">Project</label>
-                                <textarea cols="30" rows="10" name="project" id="project" placeholder="Write your Project" class="contact__form-input" ></textarea>
+                                <textarea cols="30" rows="10" name="project" id="project" placeholder="Write your Project" required class="contact__form-input" ></textarea>
                             </div>
 
                             <input type="submit"  class="button" value="Send Email">
