@@ -805,6 +805,10 @@ tr:nth-child(even) {background-color: hsl(var(--first-hue), var(--sat), 71%)}
   background-color: hsl(var(--second-hue), 8%, 26%);
   border-radius: .5rem;
 }
+::-webkit-scrollbar-thumb:hover{
+
+  background-color: hsl(var(--second-hue), 8%, 15%);
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
