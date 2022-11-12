@@ -439,6 +439,9 @@ color: var(--title-color);
 .skills_container{
   row-gap: 2rem;
   padding-top: 1rem;
+  display: flex;
+  gap: 5rem;
+  justify-content: space-evenly;
 }
 .skills__content{
   background-color: var(--container-color);
@@ -661,6 +664,11 @@ th, td {
 }
 
 tr:nth-child(even) {background-color: hsl(var(--first-hue), var(--sat), 71%)}
+
+table a,
+table a:visited  {
+  color: rgb(44, 45, 48);
+}
 
 /*=============== TESTIMONIAL ===============*/
 .testimonial__card{
@@ -891,6 +899,72 @@ body.light-theme{
 
   
 }
+@media screen and (max-width:750px) {
+  tr{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    font-size: 15px;
+    
+  }
+  tr:nth-child(even){
+    background: none;
+  }
+  .none{
+    display: none;
+  }
+  .contact__container{
+    flex-direction: column;
+  }
+  .skills_container{
+    
+    flex-direction: column;
+  }
+  .skills__box{
+    flex-direction: column;
+  }
+
+  
+}
+@media screen and (max-width:540px) {
+  tr{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    font-size: 15px;
+    
+  }
+  tr:nth-child(even){
+    background: none;
+  }
+  .none{
+    display: none;
+  }
+  .contact__container{
+    flex-direction: column;
+  }
+  .services__container{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+@media screen and (max-width:540px) {
+  tr{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    font-size: 11px;
+    
+  }
+  tr:nth-child(even){
+    background: none;
+  }
+  .none{
+    display: none;
+  }
+  
+}
 @media  screen and (max-width: 414px) {
   .section{
     padding: 5.5rem 2rem 1rem;
@@ -927,12 +1001,42 @@ body.light-theme{
   .contact__container{
     flex-direction: column;
   }
+  .skills__box{
+    display: flex;
+    flex-direction: column;
+  }
 
   
 }
 @media  screen and (max-width: 375px) {
   .section{
     padding: 5.5rem 2rem 1rem;
+  }
+  tr{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    font-size: 9px;
+    
+  }
+  tr:nth-child(even){
+    background: none;
+  }
+  .none{
+    display: none;
+  }
+  .home__handle{
+    width: 190px;
+    overflow: hidden;
+  }
+  textarea{
+    width: 232px;
+  }
+  .footer__title{
+    font-size: 12px;
+  }
+  .work__card{
+    width: 201px;
   }
   
 }
@@ -950,6 +1054,53 @@ body.light-theme{
   .home__img{
     width: 130px;
   }
+  .section{
+    padding: 4.5rem 1rem 1rem;
+  }
+  .home__handle{
+    width: 150px;
+    height: 180px;
+  }
+}
+@media screen and (max-width: 299px) {
+  .about__info{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+@media screen and (max-width: 280px){
+.section {
+    padding: 3.5rem 0rem 1rem;
+}
+.home__handle {
+  width: 148px;
+  height: 162px;
+}
+.skills__box{
+  flex-direction: column;
+}
+.services__container{
+  display: flex;
+  flex-direction: column;
+}
+.work__card{
+  width: 180px;
+}
+td{
+  font-size: 8px;
+}
+textarea{
+  width: 236px;
+}
+.contact__card{
+  font-size: 10px;
+}
+.footer__container{
+  display: flex;
+  font-size: 12px;
+  flex-direction: column;
+}
 }
 
 
